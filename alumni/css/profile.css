@@ -1,0 +1,329 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: #f5f8fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #032141fb, #0c3772dc, #000e1dde);
+    padding: 18px 25px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .brand-logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar h1 {
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.5s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffa632;
+}
+
+
+/* Profile Icon */
+.profile-icon-container {
+    position: relative;
+    margin-left: 25px; /* Added margin for spacing */
+}
+
+.profile-icon {
+    color: white;
+    font-size: 3rem; /* Increased size for visibility */
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 140px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.profile-icon-container:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: rgb(0, 1, 70);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #0f46df;
+    color: #ffffff;
+}
+
+/* Profile Section */
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 25px 80px;
+    background-color: #ffffff;
+}
+
+/* Profile Header */
+.profile-header {
+    position: relative;
+    margin-top: 90px;
+}
+
+.profile-main {
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.profile-img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 3rem;
+    color: black;
+}
+
+.employment-status, .location, .batch, .program {
+    color: #555;
+    margin-top: 5px;
+    color: #000000;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+}
+
+/* Profile Actions Buttons */
+.profile-actions {
+    margin-top: 15px;
+}
+
+.send-message-btn, .edit-profile-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #0a66c2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.send-message-btn:hover, .edit-profile-btn:hover {
+    background-color: #004182;
+}
+
+.profile-body h3 {
+    border-bottom: 2px solid #e1e9ee;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    font-size: 1.9rem;
+    color: black;
+}
+
+.bio-description {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Linked Profiles */
+.linked-profiles {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px; 
+    font-size: 20px;   
+}
+
+.linked-profile i{
+   font-size: 35px;
+}
+
+.linked-profile {
+    text-decoration: none;
+    color: #000000; /* LinkedIn Blue */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+
+.linked-profile:hover {
+    color: #004182;
+}
+
+/* Experience Section */
+.experience-section, .skills-section {
+    margin-top: 30px;
+}
+
+.experience-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+}
+
+.experience-item h4 {
+    margin: 0 0 10px 0;
+}
+
+.company, .institution {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.6rem;
+    
+}
+
+.duration, .location-role {
+    margin-top: 10px;
+    color: #1d1d1d;
+    font-size: 1.3rem;
+}
+
+.description {
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #e1e9ee;
+    padding: 7px 20px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* Timeline Section */
+.timeline-section {
+    margin-top: 40px;
+    color: #000000;
+}
+
+.timeline-section h3 {
+    font-size: 30px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 2px solid #e1e9ee;
+    margin-top: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background-color: #0a66c2;
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    color: black;
+}
+
+.timeline-content h4 {
+    margin: 0 0 10px 0;
+}
+
+.post-date {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .linked-profiles {
+        justify-content: center;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-icon {
+        left: -15px;
+    }
+}

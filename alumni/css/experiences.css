@@ -1,0 +1,539 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #032141, #0c3772dc, #000e1dde);
+    padding: 18px 25px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Makes sure navbar stretches fully */
+    position: relative; /* Keeps the navbar in place */
+    z-index: 10; /* Ensures navbar remains on top */
+}
+
+.navbar .brand-logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.5s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffa632;
+}
+
+
+
+/* Profile Icon */
+.profile-icon-container {
+    position: relative;
+    margin-left: 25px;
+}
+
+.profile-icon {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.profile-icon-container:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: rgb(0, 1, 70);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #0f46df;
+  color: #ffffff;
+}
+
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between; /* Keeps elements spaced correctly */
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 20px;
+    width: 100%; /* Ensures header takes the full width */
+}
+
+/* Avoid flex-shrink on child elements in header */
+header .navbar {
+    flex-shrink: 0; /* Prevents it from shrinking */
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #013576;
+}
+
+header .actions {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    padding: 5px 10px;
+    background-color: #002d62;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+header button:hover {
+    background-color: #004a99;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px; /* Add spacing between elements */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.search-btn,
+.filter-btn {
+    padding: 10px 20px;
+    background-color: #002d62;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover,
+.filter-btn:hover {
+    background-color: #004a99;
+}
+
+.search-btn img,
+.filter-btn img {
+    height: 18px;
+    width: 18px;
+}
+
+/* Experience List Styling */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card .card-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+
+.card-header .user-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-body h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.card-body h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/*Experience Image styling*/
+.experience-image {
+  width: 100%;
+  max-height: none;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.experience-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #002d62;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.modal label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.modal textarea {
+  resize: none;
+  height: 80px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#cancel-btn {
+  background-color: #e63946;
+  color: white;
+}
+
+#cancel-btn:hover {
+  background-color: #c92a34;
+}
+
+#add-btn {
+  background-color: #004a99;
+  color: white;
+}
+
+#add-btn:hover {
+  background-color: #002d62;
+}
+
+/* Hidden class for modal */
+.hidden {
+  display: none;
+}
+
+
+/* General Pop-up Styling for the filter button */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #002d62;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  color: white;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.popup-actions .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.popup-actions .cancel-btn {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.popup-actions .apply-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Hide Pop-up */
+.hidden {
+  display: none;
+}
+
+/*Comment section*/
+.comment-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.comment-popup .popup-content {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.comment-popup .popup-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.comment-popup .popup-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.comment-popup .comment-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.comment-popup .comment-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.comment-popup .submit-comment-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #004a99;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.comment-popup .submit-comment-btn:hover {
+  background-color: #002d62;
+}
+
+.hidden {
+  display: none;
+}
+
+.comment-btn {
+  margin-top: 15px; /* Add spacing from other content */
+  padding: 10px 20px;
+  background-color: #004a99;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.comment-btn:hover {
+  background-color: #002d62;
+}
+
+.comment-btn:active {
+  background-color: #001a42;
+}
+
+.comment-list {
+  color: black;
+}
+
+.comment-list .profile-pic {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Make the height equal to width */
+  border-radius: 50%; /* Ensures the image is circular */
+  object-fit: cover; /* Ensures the image scales correctly within the circle */
+  margin-right: 10px; /* Adds spacing between the image and the text */
+  display: inline-block; /* Ensures alignment with text */
+  vertical-align: middle; /* Aligns with text */
+}
+

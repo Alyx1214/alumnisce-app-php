@@ -1,0 +1,138 @@
+<!-- Author: Ma. Angela Shane Usi-->
+ <!-- Edited By: Alyssa Mari F. Albarda -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnisce</title>
+    <link rel="stylesheet" href="../css/alumni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="../js/alumni.js"></script> <!--External script to fetch and populate alumni data-->
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <i class="fas fa-graduation-cap"></i> ALUMNISCE
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/homepage.html">HOME</a></li>
+                <li><a href="../html/alumni.html">ALUMNUS</a></li>
+                <li><a href="../html/events.html">EVENTS</a></li>
+                <li><a href="../html/opportunities.html">OPPORTUNITIES</a></li>
+                <li><a href="../html/experiences.html">EXPERIENCES</a></li>
+            </ul>
+            <div class="search-profile">
+                <div class="profile-icon-container">
+                    <a href="../html/profile.html" class="profile-icon" title="Profile"><i class="fas fa-user-circle"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../html/profile.html">View Profile</a>
+                        <a href="#" id="logout-link">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Filter Options -->
+        <div class="filter-options">
+            <!-- Search Bar and Button -->
+            <div class="search-bar-container">
+                <input type="text" id="search-keyword" placeholder="Search Alumnus" class="search-bar">
+                <button id="search-btn" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Sort Options -->
+            <div class="filter-container">
+                <label for="sort-order"><strong>Sort by Name:</strong></label>
+                <select id="sort-order" class="filter-dropdown">
+                    <option value="asc">Ascending (A-Z)</option>
+                    <option value="desc">Descending (Z-A)</option>
+                </select>
+            </div>
+
+            <!-- Program Filter -->
+            <div class="filter-container">
+                <label for="filter-program"><strong>Filter by Program:</strong></label>
+                <select id="filter-program" class="filter-dropdown">
+                    <option value="all">All</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Education">Education</option>
+                    <option value="Business Administration">Business Administration</option>
+                    <option value="Nursing">Nursing</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Business Management">Business Management</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Sociology">Sociology</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!-- Alumni List -->
+        <section class="alumni-container">
+            <h1>LOUISIAN ALUMNUS</h1>
+            <div id="alumni-list" class="alumni-list">
+                <!-- Alumni profiles will be dynamically added here -->
+                <div class="alumni-card">
+                    <img src="" alt="Alumni" class="alumni-photo">
+                    <div class="alumni-details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="" alt="Alumni 2" class="alumni-photo">
+                    <div class="alumni-details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="" alt="Alumni 2" class="alumni-photo">
+                    <div class="alumni-details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="" alt="Alumni 2" class="alumni-photo">
+                    <div class="alumni-details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="" alt="Alumni 2" class="alumni-photo">
+                    <div class="alumni-details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Additional alumni cards will go here -->
+            </div>
+        </section>
+    </main>
+
+<script src="../js/alumni.js"></script>
+</body>
+</html>

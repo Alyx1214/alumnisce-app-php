@@ -1,0 +1,125 @@
+/* Search and Filter Section */
+.search-filter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px; /* Adjust padding as needed */
+    color: white;
+    background: linear-gradient(to bottom, rgba(2, 1, 8, 0.897), rgba(0, 0, 0, 0.7)), url('../img/homepagebg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.search-bar input {
+    padding: 10px; /* Padding for input */
+    width: 300px; /* Fixed width for input */
+    font-size: 16px; /* Font size for readability */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+}
+
+.search-bar button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #004080; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.filter-options {
+    display: flex; /* Flex container for filters */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center align items */
+}
+
+.filter-group {
+    margin-bottom: 15px; /* Space below each filter */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width for layout */
+}
+
+.filter-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding for inputs */
+    font-size: 14px; /* Font size */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
+.filter-group select,
+.filter-group input {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding for inputs */
+    font-size: 14px; /* Font size */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.btn-primary {
+    background-color: #004080; /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px; /* Padding for button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+    width: 150px; /* Fixed width */
+}
+
+.btn-secondary {
+    padding: 10px; /* Padding for button */
+    background-color: #ccc; /* Secondary button color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+    width: 150px; /* Fixed width */
+}
+
+.card {
+            display: flex;
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content h3 {
+            margin: 0;
+            padding-bottom: 8px;
+        }
+        .card-content p {
+            margin: 4px 0;
+        }
+        .connect-button {
+            background-color: #0a66c2;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .connect-button:hover {
+            background-color: #004182;
+        }
+
+

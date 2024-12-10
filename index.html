@@ -1,0 +1,70 @@
+<!-- Author: Mark Emarson Ayap-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnisce - Social Media for Alumni</title>
+    <link rel="stylesheet" href="alumni/css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <i class="fas fa-graduation-cap"></i> ALUMNISCE
+            </div>
+            <ul class="nav-links">
+                <li><a href="alumni/html/register.html">HOME</a></li>
+                <li><a href="alumni/html/register.html">ALUMNUS</a></li>
+                <li><a href="alumni/html/register.html">EVENTS</a></li>
+                <li><a href="alumni/html/register.html">OPPORTUNITIES</a></li>
+                <li><a href="alumni/html/register.html">EXPERIENCES</a></li>
+            </ul>
+            <div class="search-profile">
+                <div class="profile-icon-container">
+                    <a href="alumni/html/register.html" class="profile-icon" title="Profile"><i class="fas fa-user-circle"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Landing Section with Image Slider -->
+    <section class="landing">
+        <div class="overlay"></div>
+        <!-- Slider container -->
+        <div class="slider-container">
+            <div class="slides">
+                <img src="alumni/img/slide1.jpg" class="slide" alt="Slide 1">
+                <img src="alumni/img/slide2.jpg" class="slide" alt="Slide 2">
+                <img src="alumni/img/slide3.jpg" class="slide" alt="Slide 3">
+            </div>
+            <!-- Navigation dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="landing-content">
+            <h1>Welcome to Alumnisce</h1>
+            <p>Stay connected with your fellow alumni, access opportunities, events, and much more.</p>
+            <a href="alumni/html/register.html" class="get-started-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Alumnisce | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for slider -->
+    <script src="alumni/js/slider.js"></script>
+
+</body>
+</html>

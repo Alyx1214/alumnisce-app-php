@@ -1,0 +1,165 @@
+<!-- Author: Mark Emarson Ayap-->
+<!-- Author: Ma. Angela Shane Usi-->
+<!-- Edited By: Alyssa Mari F. Albarda -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnisce</title>
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="../css/profile.css"> <!-- Specific styles for profile -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Optional: Link to Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <i class="fas fa-graduation-cap"></i> ALUMNISCE
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/homepage.html">HOME</a></li>
+                <li><a href="../html/alumni.html">ALUMNUS</a></li>
+                <li><a href="../html/events.html">EVENTS</a></li>
+                <li><a href="../html/opportunities.html">OPPORTUNITIES</a></li>
+                <li><a href="../html/experiences.html">EXPERIENCES</a></li>
+            </ul>
+            <div class="search-profile">
+                <div class="profile-icon-container">
+                    <a href="../html/profile.html" class="profile-icon" title="Profile"><i class="fas fa-user-circle"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../html/profile.html">View Profile</a>
+                        <a href="#" id="logout-link">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-main">
+                    <img src="../images/anatoly.jpg" alt="Profile Picture" class="profile-img">
+                    <div class="profile-info">
+                        <h2></h2>
+                        <p class="program"></p>
+                        
+                        <!-- Buttons for Send Message and Edit Profile -->
+                        <div class="profile-actions">
+                            <button class="send-message-btn">Send Message</button>
+                            <button class="edit-profile-btn" onclick="redirectToEditProfile()">Edit Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bio/About Section -->
+            <div class="profile-body">
+                <h3>About</h3>
+                <p class="bio-description"></p>
+
+                <!-- Linked Profiles -->
+                <h3>Linked Profiles</h3>
+                <div class="linked-profiles">
+                    <a href="https://linkedin.com/in/anatoly" class="linked-profile" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://facebook.com/anatoly" class="linked-profile" target="_blank">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://instagram.com/anatoly" class="linked-profile" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://plus.google.com/anatoly" class="linked-profile" target="_blank">
+                        <i class="fa fa-envelope"></i> Email
+                    </a>
+                </div>
+
+                <!-- Experience Section -->
+                <h3>Experience</h3>
+                <div class="experience-section">
+                    <div class="experience-item">
+                        <h4></h4>
+                        <p class="company"></p>
+                        <p class="duration"></p>
+                        <p class="location-role"></p>
+                        <p class="description"></p>
+                    </div>
+                    <!-- Placeholder for additional experiences -->
+                    <div class="experience-item">
+                        <h4></h4>
+                        <p class="company"></p>
+                        <p class="duration"></p>
+                        <p class="location-role"></p>
+                        <p class="description">.</p>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <h3>Skills</h3>
+                <div class="skills-section">
+                    <span class="skill"></span>
+                    <span class="skill"></span>
+                    <span class="skill"></span>
+                    <span class="skill"></span>
+                    <span class="skill"></span>
+                </div>
+            </div>
+
+            <!-- Timeline: Posts & Contributions -->
+            <div class="timeline-section">
+                <h3>Posts & Contributions</h3>
+                <div class="timeline">
+                    <!-- Post Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                            <span class="post-date"></span>
+                        </div>
+                    </div>
+                    <!-- Post Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                            <span class="post-date"></span>
+                        </div>
+                    </div>
+                    <!-- Post Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                            <span class="post-date"></span>
+                        </div>
+                    </div>
+                    <!-- Placeholder for additional posts -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                            <span class="post-date"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SLU Alumnisce | All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/homepage.js"></script>
+    <script src="../js/profile.js" defer></script>
+</body>
+</html>

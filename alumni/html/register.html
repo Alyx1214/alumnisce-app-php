@@ -1,0 +1,93 @@
+<!-- Author: Ma. Angela Shane Usi-->
+<!-- Edited By: Alyssa Mari F. Albarda -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnisce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <div class="brand-logo">
+                <i class="fas fa-graduation-cap"></i> ALUMNISCE
+            </div>
+            <h1>Welcome Back Louisian!</h1>
+            <p>Let's all take a look and visit our Alma Mater</p>
+            <button id="toggle-btn" class="sign-in-btn" onclick="toggleForm('login')">SIGN IN</button>
+            <button id="signup-btn" class="sign-up-btn" onclick="toggleForm('signup')">SIGN UP</button>
+        </div>
+        <div class="right-box">
+            <div id="signup-form-container" class="form-container">
+                <h2>Create Account</h2>
+                <form id="signup-form" onsubmit="return handleSignup(event)">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="first-name" required>
+                            <label for="first-name">First Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="last-name" required>
+                            <label for="last-name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="slu-id" required>
+                        <label for="slu-id">SLU ID Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" required>
+                        <label for="signup-email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="signup-password" required>
+                        <label for="signup-password">Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirm-password" required>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+
+                    <!-- Data Privacy Considerations -->
+                    <div class="privacy-policy">
+                        <input type="checkbox" id="privacy-checkbox" />
+                        <label for="privacy-checkbox">
+                            I agree to the 
+                            <a href="#">Privacy Policy</a> and 
+                            <a href="#">Terms and Conditions</a>.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn">SIGN UP</button>
+                </form>
+            </div>
+            <div id="login-form-container" class="form-container active">
+                <h2>Sign In</h2>
+                <form id="login-form" onsubmit="handleLogin(event); return false;">
+                    <div class="input-group">
+                        <input type="text" id="login-sluid" required>
+                        <label for="login-sluid">SLU ID</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-password" required>
+                        <label for="login-password">Password</label>
+                    </div>
+                    <button type="submit" class="btn">LOG IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add profile link to the navbar -->
+    <div class="profile-icon-container">
+        <a href="../html/SignUp.html" class="profile-icon" title="Profile">
+            <i class="fas fa-user-circle"></i>
+        </a>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

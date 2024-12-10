@@ -1,0 +1,88 @@
+<!-- Author: Ma. Angela Shane Usi-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnisce</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <i class="fas fa-graduation-cap"></i> ALUMNISCE
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/homepage.html">HOME</a></li>
+                <li><a href="../html/alumni.html">ALUMNUS</a></li>
+                <li><a href="../html/events.html">EVENTS</a></li>
+                <li><a href="../html/opportunities.html">OPPORTUNITIES</a></li>
+                <li><a href="../html/experiences.html">EXPERIENCES</a></li>
+            </ul>
+            <div class="search-profile">
+                <div class="profile-icon-container">
+                    <a href="../html/profile.html" class="profile-icon" title="Profile"><i class="fas fa-user-circle"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../html/profile.html">View Profile</a>
+                        <a href="#" id="logout-link">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section" id="main">
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <h1>Welcome to the SLU Alumnisce</h1>
+                <p>Stay connected with your fellow Louisian alumni, discover opportunities, and share your experiences.</p>
+                <a href="#opportunities" class="explore-btn">Explore</a>
+            </div>
+            <div class="features-container">
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Connect with Alumni</h3>
+                        <p>Find and connect with alumni across various programs and years. Reconnect with your batchmates.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Events</h3>
+                        <p>Stay updated on the latest alumni events, reunions, and SLU gatherings.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Opportunities</h3>
+                        <p>Explore job opportunities and collaborations posted by SLU and its partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunities Section -->
+    <section class="opportunities-section" id="opportunities">
+        <h2>Opportunities</h2>
+        <div class="opportunities-grid" id="opportunities-grid">
+            <!-- Opportunities will be dynamically inserted here -->
+        </div>
+        
+        <!-- View More Button -->   
+        <div class="view-more-container">
+            <a href="../html/opportunities.html" class="view-more-btn">View More Opportunities</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SLU Alumnisce | All Rights Reserved</p>
+    </footer>
+
+<script src="../js/homepage.js"></script>
+</body>
+</html>
